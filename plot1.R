@@ -1,4 +1,5 @@
-# Plots the total measured PM2.5 by year.
+# Plots the total measured PM2.5 by year. A dotted linear regression line is
+# added to show the approximate change over time.
 
 library(plyr)
 

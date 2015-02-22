@@ -1,4 +1,9 @@
-library("ggplot2")
+# Plots the total measured PM2.5 in Baltimore City, Maryland by year, grouped by
+# source type. Linear regression lines are added for each source type group to
+# show the approximate changes over time.
+
+library(plyr)
+library(ggplot2)
 
 # Load required data
 NEI <- readRDS("summarySCC_PM25.rds")

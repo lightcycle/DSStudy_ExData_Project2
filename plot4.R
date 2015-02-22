@@ -1,3 +1,10 @@
+# Plots the total measured PM2.5 from coal combustion sources by year. Coal
+# combustion sources were identified by selecting those with both "coal" and
+# "comb" occuring in their text description fields, case-insensitive. A dotted
+# linear regression line is added to show the approximate change over time.
+
+library(plyr)
+
 # Load required data
 NEI <- readRDS("summarySCC_PM25.rds")
 SCC <- readRDS("Source_Classification_Code.rds")

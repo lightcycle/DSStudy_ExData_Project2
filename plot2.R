@@ -1,3 +1,6 @@
+# Plots the total measured PM2.5 in Baltimore City, Maryland by year. A dotted
+# linear regression line is added to show the approximate change over time.
+
 library(plyr)
 
 # Load required data

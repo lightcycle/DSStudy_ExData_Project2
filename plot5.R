@@ -1,3 +1,11 @@
+# Plots the total measured PM2.5 from motor vehicle sources in Baltimore City,
+# Maryland by year. Motor vehicle sources were identified by selecting those
+# with "veh" but not "lawn" occuring in their text description fields,
+# case-insensitive. A dotted linear regression line is added to show the
+# approximate change over time.
+
+library(plyr)
+
 # Load required data
 NEI <- readRDS("summarySCC_PM25.rds")
 SCC <- readRDS("Source_Classification_Code.rds")

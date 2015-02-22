@@ -1,3 +1,12 @@
+# Plots the total measured PM2.5 from motor vehicle sources by year, grouped by
+# Baltimore City, Maryland and Los Angeles County, California. Motor vehicle
+# sources were identified by selecting those with "veh" but not "lawn" occuring
+# in their text description fields, case-insensitive. Linear regression lines
+# are added to show the approximate changes over time.
+
+library(plyr)
+library(ggplot2)
+
 # Load required data
 NEI <- readRDS("summarySCC_PM25.rds")
 SCC <- readRDS("Source_Classification_Code.rds")
