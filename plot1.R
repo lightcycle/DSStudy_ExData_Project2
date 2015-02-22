@@ -1,3 +1,5 @@
+# Plots the total measured PM2.5 by year.
+
 library(plyr)
 
 # Load required data
